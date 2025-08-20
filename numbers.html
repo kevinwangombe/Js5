@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Storing Numbers</title>
+  </head>
+  <body>
+    <script>
+      // Storing number in a variable by using const as unchangable
+
+      let number;
+      number = 42;
+      const anotherNumber = number + 30.8;
+      const smallNumber = -3.7e-3;
+      const bigNumber = 5.2e6;
+      const manyDigits = 3_530_755.383_725;
+
+      document.write('<p>First number: ' + number + '</p>');
+      document.write('<p>Another number: ' + anotherNumber + '</p>');
+      document.write('<p>Addition incorect: ' + anotherNumber + 25 + '</p>');
+      document.write('<p><Addition correct : ' + (anotherNumber + 25) + ' /p>');
+      document.write('<p>Small number: ' + smallNumber + ' </p>');
+      document.write('<p>Big number: ' + bigNumber + '</p>');
+      document.write('<p>Many digits: ' + manyDigits + '</p>');
+    </script>
+  </body>
+</html>
