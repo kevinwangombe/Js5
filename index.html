@@ -3,12 +3,48 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Input\output</title>
+    <title>Calculations Operators</title>
   </head>
   <body>
     <script>
-      const input = prompt('Input: \nPlease make an entry;', 'Good morning!');
-      alert('Your input:\n' + input + '\nThank you very much');
+      let z;
+
+      // First Calculation is calculated from left to right
+      z = 2 + 4 - 2.5;
+      document.write('2 + 4 - 2.5 = ' + z + '<br>');
+
+      // Second calculations multlipication and division are calculated first, and addition and subtraction follows
+      z = 2 + 4 * 3 - 6 / 2;
+      document.write('2 + 4 * 3 - 6 / 2 = ' + z + '<br>');
+
+      // The third Calculation parentheses are calculated first (2 + 4 ) and ( 3 - 6) followed by remainder of the calculations results 6 * -3 / 2 = -9
+      z = ((2 + 4) * (3 - 6)) / 2;
+      document.write('(2 + 4 ) * ( 3 - 6 ) /2 = ' + z + '<br>');
+
+      //  % is a modulo operator which determines the remainder, 13.5 / 5 = 2 with a remainder of 3.5  if you do 13.5 % 5 result will be 3.5
+      z = 13.5 % 5;
+      document.write('13.5 % 5 = ' + z + '<br>');
+
+      z = 6;
+      document.write('z = ' + z + '<br>');
+
+      z = -z;
+      document.write('z = -z | z = ' + z + '<br>');
+
+      z = z * 5;
+      document.write('z = z * 5 | z = ' + z + '<br>');
+
+      z = 2.5 ** -3.5;
+      document.write('2.5 ** -3.5 = ' + z + '<br>');
+
+      z = (-2.5) ** -3;
+      document.write('(-2.5) ** -3 = ' + z + '<br>');
+
+      (-2) ** -3.5;
+      document.write('(-2) ** -3.5 = ' + z + '<br>');
+
+      z = 4 * 3 ** 2;
+      document.write('4 * 3 ** 2 = ' + z);
     </script>
   </body>
 </html>
