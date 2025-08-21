@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment_combined</title>
+  </head>
+  <body>
+    <script>
+      let tx;
+      tx = 'This';
+      document.write('<p>' + tx + '<br>');
+      tx = tx + ' is a';
+      document.write(tx + '<br>');
+
+      tx += ' sentence.';
+      document.write(tx + '</p>');
+      let z;
+      z = 6;
+      document.write('<p>' + z + ' ');
+      z++;
+      document.write(z + ' ');
+      z--;
+      document.write(z + ' ');
+      z += 13;
+      document.write(z + ' ');
+      z -= 5;
+      document.write(z + ' ');
+      z *= 3;
+      document.write(z + ' ');
+      z /= 6;
+      document.write(z + ' ');
+      z %= 3;
+      document.write(z + '</p>');
+      let a = 5,
+        b = 5,
+        c = 5,
+        d;
+
+      /* a++ is a posfix increament value operator (++). Here is what happens step by step....
+
+          1. let a = 5.a variable is declared and assigned the value of 5.
+          2. let d; d variable is declaired but not yet assigned value (undefined)
+          3. d = a++; The postfix ++ operator does two things;
+
+            i) First, it returns the current value of a (which is 5). This value is then assigned to the variable d. ASSIGNMENR
+
+            ii) After the value has been returned, it increaments a by 1.INCREMENT
+
+        - Now d = 5 and a = 6*/
+      d = a++;
+      document.write('<p>' + d + ' ');
+
+      // b is increased first, then d recieves the increse value of b.(Prefix notation)
+      d = ++b;
+      document.write(d + ' ');
+      d = c++ + ++c + c++;
+      document.write(d + '</p>');
+    </script>
+  </body>
+</html>
